@@ -1,0 +1,316 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+body {
+    background-color: #302f2f;
+    font-family: 'Gotham', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+h1 {
+    color: white;
+    position: relative;
+    /* left: 30%; */
+    font-size: 150px;
+    width: 25%;
+    height: 50%;
+    opacity: 0.5;
+}
+
+.content-1 {
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+    top: -20%;
+    opacity: 0;
+}
+
+#playedsongs {
+    position: relative;
+    top: -30%;
+    /* make it spotify green (light green) */
+}
+
+p {
+    color: white;
+    position: relative;
+    font-family: 'Gotham Thin', sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+
+#description {
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+}
+
+/* #green {
+    color: #146542;
+    position: relative;
+    font-family: 'Gotham Black', sans-serif;
+    font-size: 24px;
+    text-align: left;
+} */
+
+h1:hover ~ #floats {
+    opacity: 0.33;
+    z-index: -1;
+}
+
+h1:hover ~ #description {
+    opacity: 1;
+    z-index: 4;;
+}
+
+h1:hover {
+    opacity: 1;
+    z-index: 3;
+}
+
+#first-text {
+    opacity: 0;
+    
+}
+
+#first:hover ~#first-text {
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    top: 200%;
+}
+
+#played {
+    color: white;
+}
+
+#played:hover {
+    color: #146542;
+    cursor: pointer;
+}
+
+a:link { text-decoration: none; 
+color: white}
+
+a:visited { 
+    text-decoration: none;
+    color: white
+}
+
+a:active { 
+    text-decoration: none;
+    color: white
+}
+a:hover {
+    color: #146542;
+    cursor: pointer;
+}
+
+.floatl {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    border: 10px solid #302f2f; 
+    background-color: #454545;
+    float: left;
+    overflow: hidden;
+/*   display: inline-block; */
+}
+
+.floatl:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.floatl:hover  {
+    background-color: whitesmoke;
+    cursor: pointer;
+    animation: floating 2s ease-in-out infinite
+}
+
+.floatl:hover > .title{
+    color: #146542;
+}
+
+.floatl:hover > .title-4{
+    color: #146542;
+}
+
+#floats {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    z-index: 2;
+    overflow-y:scroll;
+}
+
+#floatclear {
+  clear: both;
+}
+
+#first:hover ~ #second{
+    opacity: 0.33;
+    z-index: -3;
+}
+
+#floats:hover ~ #yp{
+    opacity: 0;
+    content: "hello";
+}
+
+#song-1 {
+    opacity: 0;
+    font-size: 35px;
+    color: white;
+}
+
+#song-2 {
+    opacity: 0;
+    color: #1ed760;
+}
+
+#song-3 {
+    opacity: 0;
+    font-size: 45px;
+    color: #cdf564;
+}
+
+#song-4 {
+    opacity: 0;
+    font-size: 25px;
+    color: #4b917d;
+}
+
+#song-5 {
+    opacity: 0;
+    font-size: 50px;
+    color: #1db954;
+}
+
+#floats:hover ~ #song-1{
+    opacity: 1;
+    position: absolute;
+    top: 55%;
+    left:50%;
+    z-index: 3;
+}
+
+.sd {
+    font-size: 10px;
+}
+
+#content-3 {
+    color: #cdf564;
+}
+#content-4 {
+    color: #4b917d;
+}
+
+#content-5 {
+    color: #1db954;
+}
+
+#content-2 {
+    color: #1ed760;
+}
+#floats:hover ~ #song-2{
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    z-index: 3;
+}
+
+#floats:hover ~ #song-3{
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    z-index: 3;
+}
+
+#floats:hover ~ #song-4{
+    opacity: 1;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    z-index: 3;
+}
+
+#floats:hover ~ #song-5{
+    opacity: 1;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    z-index: 3;
+}
+#first:hover ~ #third{
+    opacity: 0.33;
+}
+#first:hover ~ #fourth{
+    opacity: 0.33;
+}
+#first:hover ~ #fifth{
+    opacity: 0.33;
+}
+
+#first:hover ~ #first-text{
+    z-index: 2;
+}
+
+#second:hover ~ #third{
+    opacity: 0.33;
+}
+#second:hover ~ #fourth{
+    opacity: 0.33;
+}
+#second:hover ~ #fifth{
+    opacity: 0.33;
+}
+
+#second:hover ~ #third{
+    opacity: 0.33;
+}
+
+#third:hover ~ #fourth{
+    opacity: 0.33;
+}
+#third:hover ~ #fifth{
+    opacity: 0.33;
+}
+
+#fourth:hover ~ #fifth{
+    opacity: 0.33;
+}
+
+  
+#cover {
+    width:160px;
+    height: 160px;
+    position: relative;
+    top: 7.5%;
+    left: 10%;
+}
+
+.title {
+    color: white;
+    position: relative;
+    top: 12%;
+    left: 10%;
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+}
+.title-4 {
+    color: white;
+    position: relative;
+    top: 18%;
+    left: 10%;
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, 0px); }   
+}
